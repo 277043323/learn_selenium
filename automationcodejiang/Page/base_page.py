@@ -17,10 +17,12 @@ class Base:
         if self.url!="":
             self.driver.get(self.url)
 
-
     def find(self,by,locator):
         return self.driver.find_element(by,locator)
 
     def swith(self,n):
         self.driver.switch_to.window(self.driver.window_handles[n])
+
+    def wer(self):
+        pass
 
